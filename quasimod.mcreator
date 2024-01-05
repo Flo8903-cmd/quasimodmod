@@ -178,9 +178,31 @@
         ]
       },
       "path": "~/Bloecke"
+    },
+    {
+      "name": "ConstrucionWand",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "construcion_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/item/ConstrucionWandItem.java",
+          "src/main/resources/assets/quasimod/models/item/construcion_wand.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "ConstructionWandBlock",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    }
+  ],
   "sound_elements": [
     {
       "name": "gmbh_living",
@@ -229,6 +251,7 @@
       "block.quasimod.fabrik_5": "Fabrik block",
       "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_death": "",
+      "item.quasimod.construcion_wand": "Construcion Wand",
       "block.quasi.ertser": "Ertser"
     }
   },
