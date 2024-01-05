@@ -3,6 +3,7 @@
     {
       "name": "Ertser",
       "type": "block",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ertser",
@@ -12,6 +13,104 @@
           "src/main/java/net/mcreator/quasi/block/ErtserBlock.java",
           "src/main/resources/assets/quasimod/models/block/ertser.json",
           "src/main/resources/assets/quasimod/models/item/ertser.json"
+        ]
+      }
+    },
+    {
+      "name": "Fabrik1",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabrik_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/blockstates/fabrik_1.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik1Block.java",
+          "src/main/resources/assets/quasimod/models/item/fabrik_1.json",
+          "src/main/resources/assets/quasimod/models/block/fabrik_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Fabrik2",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabrik_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/block/fabrik_2.json",
+          "src/main/resources/assets/quasimod/models/item/fabrik_2.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik2Block.java",
+          "src/main/resources/assets/quasimod/blockstates/fabrik_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Fabrik3",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabrik_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/item/fabrik_3.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik3Block.java",
+          "src/main/resources/assets/quasimod/blockstates/fabrik_3.json",
+          "src/main/resources/assets/quasimod/models/block/fabrik_3.json"
+        ]
+      }
+    },
+    {
+      "name": "Fabrik4",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabrik_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/block/fabrik_4.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik4Block.java",
+          "src/main/resources/assets/quasimod/blockstates/fabrik_4.json",
+          "src/main/resources/assets/quasimod/models/item/fabrik_4.json"
+        ]
+      }
+    },
+    {
+      "name": "Fabrik5",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabrik_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/blockstates/fabrik_5.json",
+          "src/main/resources/assets/quasimod/models/item/fabrik_5.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik5Block.java",
+          "src/main/resources/assets/quasimod/models/block/fabrik_5.json"
+        ]
+      }
+    },
+    {
+      "name": "Fabrik1SpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabrik_1_special_information",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/Fabrik1SpecialInformationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
         ]
       }
     }
@@ -47,8 +146,13 @@
     "en_us": {
       "block.quasimod.ertser": "Ertser",
       "subtitles.gmbh_hurt": "",
+      "block.quasimod.fabrik_5": "Fabrik block",
+      "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_living": "",
       "subtitles.gmbh_death": "",
+      "block.quasimod.fabrik_1": "Fabrik block",
+      "block.quasimod.fabrik_3": "Fabrik block",
+      "block.quasimod.fabrik_2": "Fabrik block",
       "block.quasi.ertser": "Ertser"
     }
   },

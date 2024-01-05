@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "quasimod:block/factory3",
+    "particle": "quasimod:block/factory3"
+  },
+  "render_type": "solid"
+}
