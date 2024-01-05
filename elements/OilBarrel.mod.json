@@ -2,14 +2,14 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "factory1",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "oil_barrel_bottom",
+    "textureTop": "oil_barrel_top",
+    "textureLeft": "oil_barrel_side",
+    "textureFront": "oil_barrel_side",
+    "textureRight": "oil_barrel_side",
+    "textureBack": "oil_barrel_side",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,30 +33,30 @@
         "subtract": false
       }
     ],
-    "name": "Fabrik block",
+    "name": "Oil Barrel",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 2.0,
-    "resistance": 15.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:QuasiBlocks"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "NETHERITE"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -121,7 +121,11 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

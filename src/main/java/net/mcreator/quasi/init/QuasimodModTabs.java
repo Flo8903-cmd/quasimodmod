@@ -23,6 +23,7 @@ public class QuasimodModTabs {
 				tabData.accept(QuasimodModBlocks.FABRIK_3.get().asItem());
 				tabData.accept(QuasimodModBlocks.FABRIK_4.get().asItem());
 				tabData.accept(QuasimodModBlocks.FABRIK_5.get().asItem());
+				tabData.accept(QuasimodModBlocks.OIL_BARREL.get().asItem());
 			})
 
 					.build());

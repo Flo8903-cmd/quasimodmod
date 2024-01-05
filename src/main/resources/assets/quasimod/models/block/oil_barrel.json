@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "quasimod:block/oil_barrel_bottom",
+    "up": "quasimod:block/oil_barrel_top",
+    "north": "quasimod:block/oil_barrel_side",
+    "east": "quasimod:block/oil_barrel_side",
+    "south": "quasimod:block/oil_barrel_side",
+    "west": "quasimod:block/oil_barrel_side",
+    "particle": "quasimod:block/oil_barrel_bottom"
+  },
+  "render_type": "solid"
+}

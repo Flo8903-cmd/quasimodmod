@@ -22,6 +22,7 @@ public class QuasimodModItems {
 	public static final RegistryObject<Item> FABRIK_3 = block(QuasimodModBlocks.FABRIK_3);
 	public static final RegistryObject<Item> FABRIK_4 = block(QuasimodModBlocks.FABRIK_4);
 	public static final RegistryObject<Item> FABRIK_5 = block(QuasimodModBlocks.FABRIK_5);
+	public static final RegistryObject<Item> OIL_BARREL = block(QuasimodModBlocks.OIL_BARREL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

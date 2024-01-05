@@ -1,13 +1,14 @@
 {
-  "block.quasimod.ertser": "Ertser",
   "subtitles.gmbh_hurt": "",
-  "block.quasimod.fabrik_5": "Fabrik block",
-  "block.quasimod.fabrik_4": "Fabrik block",
   "subtitles.gmbh_living": "",
-  "subtitles.gmbh_death": "",
   "block.quasimod.fabrik_1": "Fabrik block",
   "block.quasimod.fabrik_3": "Fabrik block",
   "block.quasimod.fabrik_2": "Fabrik block",
   "item_group.quasimod.quasi_blocks": "Quasi Blocks",
+  "block.quasimod.ertser": "Ertser",
+  "block.quasimod.oil_barrel": "Oil Barrel",
+  "block.quasimod.fabrik_5": "Fabrik block",
+  "block.quasimod.fabrik_4": "Fabrik block",
+  "subtitles.gmbh_death": "",
   "block.quasi.ertser": "Ertser"
 }

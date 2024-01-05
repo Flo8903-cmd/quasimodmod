@@ -112,6 +112,23 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "OilBarrel",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_barrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/item/oil_barrel.json",
+          "src/main/resources/assets/quasimod/blockstates/oil_barrel.json",
+          "src/main/java/net/mcreator/quasi/block/OilBarrelBlock.java",
+          "src/main/resources/assets/quasimod/models/block/oil_barrel.json"
+        ]
+      },
+      "path": "~/Bloecke"
     }
   ],
   "variable_elements": [],
@@ -143,16 +160,17 @@
   ],
   "language_map": {
     "en_us": {
-      "block.quasimod.ertser": "Ertser",
       "subtitles.gmbh_hurt": "",
-      "block.quasimod.fabrik_5": "Fabrik block",
-      "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_living": "",
-      "subtitles.gmbh_death": "",
       "block.quasimod.fabrik_1": "Fabrik block",
       "block.quasimod.fabrik_3": "Fabrik block",
       "block.quasimod.fabrik_2": "Fabrik block",
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
+      "block.quasimod.ertser": "Ertser",
+      "block.quasimod.oil_barrel": "Oil Barrel",
+      "block.quasimod.fabrik_5": "Fabrik block",
+      "block.quasimod.fabrik_4": "Fabrik block",
+      "subtitles.gmbh_death": "",
       "block.quasi.ertser": "Ertser"
     }
   },
