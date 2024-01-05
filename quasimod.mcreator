@@ -1,0 +1,82 @@
+{
+  "mod_elements": [
+    {
+      "name": "Ertser",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ertser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/blockstates/ertser.json",
+          "src/main/java/net/mcreator/quasi/block/ErtserBlock.java",
+          "src/main/resources/assets/quasimod/models/block/ertser.json",
+          "src/main/resources/assets/quasimod/models/item/ertser.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "gmbh_living",
+      "files": [
+        "gmbh_living"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "gmbh_hurt",
+      "files": [
+        "gmbh_hurt"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "gmbh_death",
+      "files": [
+        "gmbh_death"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.quasimod.ertser": "Ertser",
+      "subtitles.gmbh_hurt": "",
+      "subtitles.gmbh_living": "",
+      "subtitles.gmbh_death": "",
+      "block.quasi.ertser": "Ertser"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "quasimod",
+    "modName": "quasimod",
+    "version": "1.0.0",
+    "author": "flo8903, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Creative Commons Attribution-NonCommercial 3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "fusion",
+      "curios_api",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.quasi",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

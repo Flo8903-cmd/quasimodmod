@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "quasimod:block/einz",
+    "particle": "quasimod:block/einz"
+  },
+  "render_type": "solid"
+}

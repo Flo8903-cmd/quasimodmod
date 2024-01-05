@@ -1,0 +1,26 @@
+{
+  "gmbh_living": {
+    "sounds": [
+      {
+        "name": "quasimod:gmbh_living",
+        "stream": false
+      }
+    ]
+  },
+  "gmbh_hurt": {
+    "sounds": [
+      {
+        "name": "quasimod:gmbh_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "gmbh_death": {
+    "sounds": [
+      {
+        "name": "quasimod:gmbh_death",
+        "stream": false
+      }
+    ]
+  }
+}
