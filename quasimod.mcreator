@@ -146,6 +146,38 @@
         ]
       },
       "path": "~/Bloecke/Gestein"
+    },
+    {
+      "name": "OilBarrelUpdateTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_barrel_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/OilBarrelUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bloecke"
     }
   ],
   "variable_elements": [],
@@ -170,6 +202,14 @@
       "name": "gmbh_death",
       "files": [
         "gmbh_death"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "oildrumm",
+      "files": [
+        "328921_hellska_12_barrel09_online-audio-converter.com"
       ],
       "category": "neutral",
       "subtitle": ""
@@ -199,11 +239,11 @@
         "name": "Bloecke",
         "children": [
           {
-            "name": "Fabrik",
+            "name": "Gestein",
             "children": []
           },
           {
-            "name": "Gestein",
+            "name": "Fabrik",
             "children": []
           }
         ]
