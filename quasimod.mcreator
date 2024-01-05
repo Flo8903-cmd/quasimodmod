@@ -173,7 +173,6 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "fusion",
       "curios_api",
       "geckolib"
     ],

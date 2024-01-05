@@ -20,12 +20,6 @@ authors="flo8903, MCreator"
 
 
 [[dependencies.quasimod]]
-    modId="fusion"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.quasimod]]
     modId="curios_api"
     mandatory=false
     versionRange="[0,)"

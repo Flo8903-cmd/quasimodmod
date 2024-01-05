@@ -1,14 +1,4 @@
 repositories {
-	maven {
-		url = "https://api.modrinth.com/maven"
-	}
-}
-	dependencies {
-		implementation fg.deobf("maven.modrinth:fusion-connected-textures:1.1.0c-forge-mc1.20.2")
-}
-
-
-repositories {
 maven {
   url = "https://maven.theillusivec4.top/"
   }
