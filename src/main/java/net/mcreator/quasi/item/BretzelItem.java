@@ -6,13 +6,14 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class ConstrucionWandItem extends Item {
-	public ConstrucionWandItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC));
+public class BretzelItem extends Item {
+	public BretzelItem() {
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(9).saturationMod(1f).build()));
 	}
 
 	@Override

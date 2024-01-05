@@ -4,6 +4,7 @@
   "block.quasimod.fabrik_1": "Fabrik block",
   "block.quasimod.gestein": "Gestein",
   "block.quasimod.fabrik_3": "Fabrik block",
+  "item.quasimod.bretzel": "Bretzel",
   "block.quasimod.fabrik_2": "Fabrik block",
   "item_group.quasimod.quasi_blocks": "Quasi Blocks",
   "item.quasimod.hammerand_chisel": "Hammer and Chisel",
@@ -12,5 +13,6 @@
   "block.quasimod.fabrik_5": "Fabrik block",
   "block.quasimod.fabrik_4": "Fabrik block",
   "subtitles.gmbh_death": "",
+  "item.quasimod.construcion_wand": "Construcion Wand",
   "block.quasi.ertser": "Ertser"
 }
