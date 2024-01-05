@@ -129,6 +129,23 @@
         ]
       },
       "path": "~/Bloecke"
+    },
+    {
+      "name": "Gestein",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gestein",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/blockstates/gestein.json",
+          "src/main/resources/assets/quasimod/models/item/gestein.json",
+          "src/main/resources/assets/quasimod/models/block/gestein.json",
+          "src/main/java/net/mcreator/quasi/block/GesteinBlock.java"
+        ]
+      },
+      "path": "~/Bloecke/Gestein"
     }
   ],
   "variable_elements": [],
@@ -163,6 +180,7 @@
       "subtitles.gmbh_hurt": "",
       "subtitles.gmbh_living": "",
       "block.quasimod.fabrik_1": "Fabrik block",
+      "block.quasimod.gestein": "Gestein",
       "block.quasimod.fabrik_3": "Fabrik block",
       "block.quasimod.fabrik_2": "Fabrik block",
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
@@ -182,6 +200,10 @@
         "children": [
           {
             "name": "Fabrik",
+            "children": []
+          },
+          {
+            "name": "Gestein",
             "children": []
           }
         ]

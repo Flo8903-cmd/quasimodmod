@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "quasimod:block/gesteintexture",
+    "up": "quasimod:block/gesteintexture",
+    "north": "quasimod:block/gesteintexture",
+    "east": "quasimod:block/gesteintexture",
+    "south": "quasimod:block/gesteintexture",
+    "west": "quasimod:block/gesteintexture",
+    "particle": "quasimod:block/gesteintexture"
+  },
+  "render_type": "solid"
+}
