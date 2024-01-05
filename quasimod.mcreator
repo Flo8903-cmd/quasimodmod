@@ -193,6 +193,71 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "HammerandChiselRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammerand_chisel_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/HammerandChiselRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Hammerundso"
+    },
+    {
+      "name": "HammerChiselCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_chisel_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quasimod/recipes/hammer_chisel_craft.json"
+        ]
+      },
+      "path": "~/Items/Hammerundso"
+    },
+    {
+      "name": "HammerandChisel",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammerand_chisel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/item/hammerand_chisel.json",
+          "src/main/java/net/mcreator/quasi/item/HammerandChiselItem.java"
+        ]
+      },
+      "path": "~/Items/Hammerundso"
     }
   ],
   "variable_elements": [
@@ -251,13 +316,21 @@
       "block.quasimod.fabrik_5": "Fabrik block",
       "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_death": "",
-      "item.quasimod.construcion_wand": "Construcion Wand",
       "block.quasi.ertser": "Ertser"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Hammerundso",
+            "children": []
+          }
+        ]
+      },
       {
         "name": "Bloecke",
         "children": [
@@ -270,10 +343,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Items",
-        "children": []
       }
     ]
   },

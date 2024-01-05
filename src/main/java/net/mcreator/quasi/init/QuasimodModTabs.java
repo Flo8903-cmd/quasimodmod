@@ -30,6 +30,7 @@ public class QuasimodModTabs {
 				tabData.accept(QuasimodModBlocks.FABRIK_5.get().asItem());
 				tabData.accept(QuasimodModBlocks.OIL_BARREL.get().asItem());
 				tabData.accept(QuasimodModBlocks.GESTEIN.get().asItem());
+				tabData.accept(QuasimodModItems.HAMMERAND_CHISEL.get());
 			})
 
 					.build());
