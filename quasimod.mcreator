@@ -183,6 +183,21 @@
       "path": "~/Bloecke"
     },
     {
+      "name": "ConstrucionWand",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "construcion_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/item/ConstrucionWandItem.java",
+          "src/main/resources/assets/quasimod/models/item/construcion_wand.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
       "name": "HammerandChiselRightclickedOnBlock",
       "type": "procedure",
       "sortid": 11,
@@ -219,6 +234,20 @@
       "path": "~/Items/Hammerundso"
     },
     {
+      "name": "HammerChiselCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_chisel_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quasimod/recipes/hammer_chisel_craft.json"
+        ]
+      },
+      "path": "~/Items/Hammerundso"
+    },
+    {
       "name": "HammerandChisel",
       "type": "item",
       "sortid": 12,
@@ -232,23 +261,16 @@
         ]
       },
       "path": "~/Items/Hammerundso"
-    },
-    {
-      "name": "HammerChiselCraft",
-      "type": "recipe",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hammer_chisel_craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/quasimod/recipes/hammer_chisel_craft.json"
-        ]
-      },
-      "path": "~/Items/Hammerundso"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "ConstructionWandBlock",
+      "type": "itemstack",
+      "scope": "map",
+      "value": "ItemStack.EMPTY"
+    }
+  ],
   "sound_elements": [
     {
       "name": "gmbh_living",
@@ -292,7 +314,6 @@
       "block.quasimod.fabrik_3": "Fabrik block",
       "block.quasimod.fabrik_2": "Fabrik block",
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
-      "item.quasimod.hammerand_chisel": "Hammer and Chisel",
       "block.quasimod.ertser": "Ertser",
       "block.quasimod.oil_barrel": "Oil Barrel",
       "block.quasimod.fabrik_5": "Fabrik block",
@@ -305,6 +326,15 @@
     "name": "~",
     "children": [
       {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Hammerundso",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "Bloecke",
         "children": [
           {
@@ -313,15 +343,6 @@
           },
           {
             "name": "Fabrik",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Hammerundso",
             "children": []
           }
         ]
