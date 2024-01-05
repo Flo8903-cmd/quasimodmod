@@ -105,6 +105,7 @@
     {
       "name": "Fabrik1SpecialInformation",
       "type": "procedure",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fabrik_1_special_information",
@@ -120,6 +121,17 @@
         ]
       },
       "path": "~/Bloecke/Fabrik"
+    },
+    {
+      "name": "QuasiBlocks",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quasi_blocks",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -160,6 +172,7 @@
       "block.quasimod.fabrik_1": "Fabrik block",
       "block.quasimod.fabrik_3": "Fabrik block",
       "block.quasimod.fabrik_2": "Fabrik block",
+      "item_group.quasimod.quasi_blocks": "Quasi Blocks",
       "block.quasi.ertser": "Ertser"
     }
   },

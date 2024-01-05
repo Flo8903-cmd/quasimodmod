@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:QuasiBlocks"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
