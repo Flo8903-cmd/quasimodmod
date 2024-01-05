@@ -103,26 +103,6 @@
       "path": "~/Bloecke/Fabrik"
     },
     {
-      "name": "Fabrik1SpecialInformation",
-      "type": "procedure",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fabrik_1_special_information",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/quasi/procedures/Fabrik1SpecialInformationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "tooltip",
-            "type": "tooltip"
-          }
-        ]
-      },
-      "path": "~/Bloecke/Fabrik"
-    },
-    {
       "name": "QuasiBlocks",
       "type": "tab",
       "sortid": 8,
