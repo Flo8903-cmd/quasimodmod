@@ -22,5 +22,13 @@
         "stream": false
       }
     ]
+  },
+  "oildrumm": {
+    "sounds": [
+      {
+        "name": "quasimod:328921_hellska_12_barrel09_online-audio-converter.com",
+        "stream": false
+      }
+    ]
   }
 }

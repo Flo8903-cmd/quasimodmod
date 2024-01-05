@@ -18,4 +18,5 @@ public class QuasimodModSounds {
 	public static final RegistryObject<SoundEvent> GMBH_LIVING = REGISTRY.register("gmbh_living", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("quasimod", "gmbh_living")));
 	public static final RegistryObject<SoundEvent> GMBH_HURT = REGISTRY.register("gmbh_hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("quasimod", "gmbh_hurt")));
 	public static final RegistryObject<SoundEvent> GMBH_DEATH = REGISTRY.register("gmbh_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("quasimod", "gmbh_death")));
+	public static final RegistryObject<SoundEvent> OILDRUMM = REGISTRY.register("oildrumm", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("quasimod", "oildrumm")));
 }

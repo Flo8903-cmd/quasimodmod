@@ -129,6 +129,38 @@
         ]
       },
       "path": "~/Bloecke"
+    },
+    {
+      "name": "OilBarrelUpdateTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_barrel_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/OilBarrelUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bloecke"
     }
   ],
   "variable_elements": [],
@@ -156,11 +188,20 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "oildrumm",
+      "files": [
+        "328921_hellska_12_barrel09_online-audio-converter.com"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.gmbh_hurt": "",
+      "subtitles.oildrumm": "",
       "subtitles.gmbh_living": "",
       "block.quasimod.fabrik_1": "Fabrik block",
       "block.quasimod.fabrik_3": "Fabrik block",

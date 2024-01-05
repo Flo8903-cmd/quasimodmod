@@ -44,7 +44,7 @@
     "creativeTab": {
       "value": "CUSTOM:QuasiBlocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "ANVIL"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,24 +79,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "GROUND"
     },
     "breakSound": {
-      "value": ""
+      "value": "CUSTOM:oildrumm"
     },
     "fallSound": {
-      "value": ""
+      "value": "CUSTOM:oildrumm"
     },
     "hitSound": {
-      "value": ""
+      "value": "CUSTOM:oildrumm"
     },
     "placeSound": {
-      "value": ""
+      "value": "CUSTOM:oildrumm"
     },
     "stepSound": {
-      "value": ""
+      "value": "CUSTOM:oildrumm"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -119,6 +119,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "OilBarrelUpdateTick"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
