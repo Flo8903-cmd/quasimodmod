@@ -14,7 +14,8 @@
           "src/main/resources/assets/quasimod/models/block/ertser.json",
           "src/main/resources/assets/quasimod/models/item/ertser.json"
         ]
-      }
+      },
+      "path": "~/Bloecke"
     },
     {
       "name": "Fabrik1",
@@ -30,7 +31,8 @@
           "src/main/resources/assets/quasimod/models/item/fabrik_1.json",
           "src/main/resources/assets/quasimod/models/block/fabrik_1.json"
         ]
-      }
+      },
+      "path": "~/Bloecke/Fabrik"
     },
     {
       "name": "Fabrik2",
@@ -46,7 +48,8 @@
           "src/main/java/net/mcreator/quasi/block/Fabrik2Block.java",
           "src/main/resources/assets/quasimod/blockstates/fabrik_2.json"
         ]
-      }
+      },
+      "path": "~/Bloecke/Fabrik"
     },
     {
       "name": "Fabrik3",
@@ -62,7 +65,8 @@
           "src/main/resources/assets/quasimod/blockstates/fabrik_3.json",
           "src/main/resources/assets/quasimod/models/block/fabrik_3.json"
         ]
-      }
+      },
+      "path": "~/Bloecke/Fabrik"
     },
     {
       "name": "Fabrik4",
@@ -78,7 +82,8 @@
           "src/main/resources/assets/quasimod/blockstates/fabrik_4.json",
           "src/main/resources/assets/quasimod/models/item/fabrik_4.json"
         ]
-      }
+      },
+      "path": "~/Bloecke/Fabrik"
     },
     {
       "name": "Fabrik5",
@@ -94,7 +99,8 @@
           "src/main/java/net/mcreator/quasi/block/Fabrik5Block.java",
           "src/main/resources/assets/quasimod/models/block/fabrik_5.json"
         ]
-      }
+      },
+      "path": "~/Bloecke/Fabrik"
     },
     {
       "name": "Fabrik1SpecialInformation",
@@ -112,7 +118,8 @@
             "type": "tooltip"
           }
         ]
-      }
+      },
+      "path": "~/Bloecke/Fabrik"
     }
   ],
   "variable_elements": [],
@@ -158,7 +165,17 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Bloecke",
+        "children": [
+          {
+            "name": "Fabrik",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "quasimod",
