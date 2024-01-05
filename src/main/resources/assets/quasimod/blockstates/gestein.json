@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "quasimod:block/gestein"
+    },
+    "facing=east": {
+      "model": "quasimod:block/gestein",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "quasimod:block/gestein",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "quasimod:block/gestein",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "quasimod:block/gestein",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "quasimod:block/gestein",
+      "x": 90
     }
   }
 }
