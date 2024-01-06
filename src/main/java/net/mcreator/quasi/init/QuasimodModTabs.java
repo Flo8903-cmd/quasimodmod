@@ -32,6 +32,8 @@ public class QuasimodModTabs {
 				tabData.accept(QuasimodModBlocks.GESTEIN.get().asItem());
 				tabData.accept(QuasimodModItems.HAMMERAND_CHISEL.get());
 				tabData.accept(QuasimodModItems.BRETZEL.get());
+				tabData.accept(QuasimodModBlocks.SALT.get().asItem());
+				tabData.accept(QuasimodModItems.SALT_ITEM.get());
 			})
 
 					.build());

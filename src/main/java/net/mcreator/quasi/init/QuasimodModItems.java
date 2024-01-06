@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.quasi.item.SaltItemItem;
 import net.mcreator.quasi.item.HammerandChiselItem;
 import net.mcreator.quasi.item.ConstrucionWandItem;
 import net.mcreator.quasi.item.BretzelItem;
@@ -30,6 +31,8 @@ public class QuasimodModItems {
 	public static final RegistryObject<Item> CONSTRUCION_WAND = REGISTRY.register("construcion_wand", () -> new ConstrucionWandItem());
 	public static final RegistryObject<Item> HAMMERAND_CHISEL = REGISTRY.register("hammerand_chisel", () -> new HammerandChiselItem());
 	public static final RegistryObject<Item> BRETZEL = REGISTRY.register("bretzel", () -> new BretzelItem());
+	public static final RegistryObject<Item> SALT = block(QuasimodModBlocks.SALT);
+	public static final RegistryObject<Item> SALT_ITEM = REGISTRY.register("salt_item", () -> new SaltItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

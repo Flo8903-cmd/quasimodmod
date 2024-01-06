@@ -344,10 +344,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -374,6 +370,77 @@
         ]
       },
       "path": "~/Prodecures"
+    },
+    {
+      "name": "Salt",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/block/salt.json",
+          "src/main/resources/data/quasimod/worldgen/placed_feature/salt.json",
+          "src/main/resources/assets/quasimod/models/item/salt.json",
+          "src/main/resources/data/quasimod/forge/biome_modifier/salt_biome_modifier.json",
+          "src/main/resources/assets/quasimod/blockstates/salt.json",
+          "src/main/java/net/mcreator/quasi/block/SaltBlock.java",
+          "src/main/resources/data/quasimod/worldgen/configured_feature/salt.json"
+        ]
+      },
+      "path": "~/Bloecke"
+    },
+    {
+      "name": "SaltBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/SaltBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bloecke"
+    },
+    {
+      "name": "SaltItem",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/item/salt_item.json",
+          "src/main/java/net/mcreator/quasi/item/SaltItemItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -482,8 +549,10 @@
       "block.quasimod.fabrik_2": "Fabrik block",
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
       "item.quasimod.hammerand_chisel": "Hammer and Chisel",
+      "block.quasimod.salt": "Salt",
       "block.quasimod.ertser": "Ertser",
       "block.quasimod.oil_barrel": "Oil Barrel",
+      "item.quasimod.salt_item": "Salt",
       "block.quasimod.fabrik_5": "Fabrik block",
       "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_death": "",
@@ -502,11 +571,11 @@
             "children": []
           },
           {
-            "name": "construction wand",
+            "name": "Food",
             "children": []
           },
           {
-            "name": "Food",
+            "name": "construction wand",
             "children": []
           }
         ]

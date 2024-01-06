@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.quasi.block.SaltBlock;
 import net.mcreator.quasi.block.OilBarrelBlock;
 import net.mcreator.quasi.block.GesteinBlock;
 import net.mcreator.quasi.block.Fabrik5Block;
@@ -30,4 +31,5 @@ public class QuasimodModBlocks {
 	public static final RegistryObject<Block> FABRIK_5 = REGISTRY.register("fabrik_5", () -> new Fabrik5Block());
 	public static final RegistryObject<Block> OIL_BARREL = REGISTRY.register("oil_barrel", () -> new OilBarrelBlock());
 	public static final RegistryObject<Block> GESTEIN = REGISTRY.register("gestein", () -> new GesteinBlock());
+	public static final RegistryObject<Block> SALT = REGISTRY.register("salt", () -> new SaltBlock());
 }
