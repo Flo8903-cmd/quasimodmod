@@ -7,6 +7,7 @@ package net.mcreator.quasi.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -33,6 +34,7 @@ public class QuasimodModItems {
 	public static final RegistryObject<Item> BRETZEL = REGISTRY.register("bretzel", () -> new BretzelItem());
 	public static final RegistryObject<Item> SALT = block(QuasimodModBlocks.SALT);
 	public static final RegistryObject<Item> SALT_ITEM = REGISTRY.register("salt_item", () -> new SaltItemItem());
+	public static final RegistryObject<Item> ALLMANN_SPAWN_EGG = REGISTRY.register("allmann_spawn_egg", () -> new ForgeSpawnEggItem(QuasimodModEntities.ALLMANN, -65536, -3355648, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

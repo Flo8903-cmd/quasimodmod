@@ -34,6 +34,7 @@ public class QuasimodModTabs {
 				tabData.accept(QuasimodModItems.BRETZEL.get());
 				tabData.accept(QuasimodModBlocks.SALT.get().asItem());
 				tabData.accept(QuasimodModItems.SALT_ITEM.get());
+				tabData.accept(QuasimodModItems.ALLMANN_SPAWN_EGG.get());
 			})
 
 					.build());

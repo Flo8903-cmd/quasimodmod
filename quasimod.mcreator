@@ -495,6 +495,23 @@
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "Allmann",
+      "type": "livingentity",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allmann",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quasimod/forge/biome_modifier/allmann_biome_modifier.json",
+          "src/main/resources/assets/quasimod/models/item/allmann_spawn_egg.json",
+          "src/main/java/net/mcreator/quasi/entity/AllmannEntity.java",
+          "src/main/java/net/mcreator/quasi/client/renderer/AllmannRenderer.java"
+        ]
+      },
+      "path": "~/ENTITY"
     }
   ],
   "variable_elements": [
@@ -599,6 +616,7 @@
       "subtitles.gmbh_living": "",
       "block.quasimod.fabrik_1": "Fabrik block",
       "block.quasimod.gestein": "Gestein",
+      "entity.quasimod.allmann": "Allmann",
       "block.quasimod.fabrik_3": "Fabrik block",
       "item.quasimod.bretzel": "Bretzel",
       "block.quasimod.fabrik_2": "Fabrik block",
@@ -611,6 +629,7 @@
       "block.quasimod.fabrik_5": "Fabrik block",
       "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_death": "",
+      "item.quasimod.allmann_spawn_egg": "Allmann Spawn Egg",
       "item.quasimod.construcion_wand": "Construcion Wand",
       "block.quasi.ertser": "Ertser"
     }
