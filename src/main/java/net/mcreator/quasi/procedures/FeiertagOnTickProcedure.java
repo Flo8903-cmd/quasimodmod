@@ -40,6 +40,13 @@ public class FeiertagOnTickProcedure {
 						entityToSpawn.setDeltaMovement(0, 0, 0);
 					}
 				}
+				{
+					double _setval = (entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new QuasimodModVariables.PlayerVariables())).FeiertagsAnger - (-1);
+					entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.FeiertagsAnger = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

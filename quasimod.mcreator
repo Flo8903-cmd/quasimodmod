@@ -460,7 +460,7 @@
           "src/main/java/net/mcreator/quasi/item/SaltItemItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Food"
     },
     {
       "name": "SetFeiertagsProcedur",
@@ -494,7 +494,7 @@
           "src/main/java/net/mcreator/quasi/command/SetIsFeiertagsCommand.java"
         ]
       },
-      "path": "~/Prodecures"
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -654,6 +654,10 @@
       },
       {
         "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "ENTITY",
         "children": []
       }
     ]
