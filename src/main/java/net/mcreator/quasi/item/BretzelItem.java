@@ -1,8 +1,15 @@
 
 package net.mcreator.quasi.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class BretzelItem extends Item {
 	public BretzelItem() {

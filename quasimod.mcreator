@@ -263,46 +263,6 @@
       "path": "~/Items/Hammerundso"
     },
     {
-      "name": "ConstrucionWandRightclickedOnBlock",
-      "type": "procedure",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "construcion_wand_rightclicked_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/quasi/procedures/ConstrucionWandRightclickedOnBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/construction wand"
-    },
-    {
       "name": "ConstrucionWandItemInHandTick",
       "type": "procedure",
       "sortid": 15,
@@ -353,8 +313,7 @@
           "src/main/resources/assets/quasimod/models/item/bretzel.json",
           "src/main/java/net/mcreator/quasi/item/BretzelItem.java"
         ]
-      },
-      "path": "~/Items"
+      }
     },
     {
       "name": "BretzelCraft",
@@ -367,8 +326,7 @@
         "files": [
           "src/main/resources/data/quasimod/recipes/bretzel_craft.json"
         ]
-      },
-      "path": "~/Items"
+      }
     }
   ],
   "variable_elements": [
