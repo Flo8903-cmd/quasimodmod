@@ -35,6 +35,12 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "ConstrucionWandRightclickedOnBlock"
+    },
+    "onItemInUseTick": {
+      "name": "ConstrucionWandItemInHandTick"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
