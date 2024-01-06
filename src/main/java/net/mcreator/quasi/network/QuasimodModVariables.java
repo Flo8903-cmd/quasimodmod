@@ -54,6 +54,7 @@ public class QuasimodModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "quasimod_worldvars";
+		public boolean IsFeiertag = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -62,10 +63,12 @@ public class QuasimodModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			IsFeiertag = nbt.getBoolean("IsFeiertag");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("IsFeiertag", IsFeiertag);
 			return nbt;
 		}
 

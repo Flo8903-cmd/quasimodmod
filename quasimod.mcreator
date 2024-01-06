@@ -290,6 +290,26 @@
         ]
       },
       "path": "~/Items/Bretzel"
+    },
+    {
+      "name": "Feiertagtriggert",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feiertagtriggert",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/FeiertagtriggertProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/proceduren/feiertag"
     }
   ],
   "variable_elements": [
@@ -298,6 +318,12 @@
       "type": "itemstack",
       "scope": "map",
       "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "IsFeiertag",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -385,7 +411,12 @@
       },
       {
         "name": "proceduren",
-        "children": []
+        "children": [
+          {
+            "name": "feiertag",
+            "children": []
+          }
+        ]
       }
     ]
   },
