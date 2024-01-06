@@ -1,6 +1,14 @@
 package net.mcreator.quasi.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.quasi.network.QuasimodModVariables;
+import net.mcreator.quasi.entity.AllmannEntity;
 
 import javax.annotation.Nullable;
 
@@ -21,6 +29,13 @@ public class PlayerKillsAllmannProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof AllmannEntity) {
+			{
+				double _setval = 3;
+				entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.FeiertagsAnger = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

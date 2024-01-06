@@ -11,8 +11,8 @@
         "files": [
           "src/main/resources/assets/quasimod/blockstates/ertser.json",
           "src/main/java/net/mcreator/quasi/block/ErtserBlock.java",
-          "src/main/resources/assets/quasimod/models/item/ertser.json",
-          "src/main/resources/assets/quasimod/models/block/ertser.json"
+          "src/main/resources/assets/quasimod/models/block/ertser.json",
+          "src/main/resources/assets/quasimod/models/item/ertser.json"
         ]
       },
       "path": "~/Bloecke"
@@ -27,9 +27,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/quasimod/blockstates/fabrik_1.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik1Block.java",
           "src/main/resources/assets/quasimod/models/item/fabrik_1.json",
-          "src/main/resources/assets/quasimod/models/block/fabrik_1.json",
-          "src/main/java/net/mcreator/quasi/block/Fabrik1Block.java"
+          "src/main/resources/assets/quasimod/models/block/fabrik_1.json"
         ]
       },
       "path": "~/Bloecke/Fabrik"
@@ -43,10 +43,10 @@
       "registry_name": "fabrik_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/quasimod/models/item/fabrik_2.json",
           "src/main/resources/assets/quasimod/models/block/fabrik_2.json",
-          "src/main/resources/assets/quasimod/blockstates/fabrik_2.json",
-          "src/main/java/net/mcreator/quasi/block/Fabrik2Block.java"
+          "src/main/resources/assets/quasimod/models/item/fabrik_2.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik2Block.java",
+          "src/main/resources/assets/quasimod/blockstates/fabrik_2.json"
         ]
       },
       "path": "~/Bloecke/Fabrik"
@@ -60,8 +60,8 @@
       "registry_name": "fabrik_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/quasi/block/Fabrik3Block.java",
           "src/main/resources/assets/quasimod/models/item/fabrik_3.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik3Block.java",
           "src/main/resources/assets/quasimod/blockstates/fabrik_3.json",
           "src/main/resources/assets/quasimod/models/block/fabrik_3.json"
         ]
@@ -77,10 +77,10 @@
       "registry_name": "fabrik_4",
       "metadata": {
         "files": [
-          "src/main/resources/assets/quasimod/models/item/fabrik_4.json",
-          "src/main/java/net/mcreator/quasi/block/Fabrik4Block.java",
           "src/main/resources/assets/quasimod/models/block/fabrik_4.json",
-          "src/main/resources/assets/quasimod/blockstates/fabrik_4.json"
+          "src/main/java/net/mcreator/quasi/block/Fabrik4Block.java",
+          "src/main/resources/assets/quasimod/blockstates/fabrik_4.json",
+          "src/main/resources/assets/quasimod/models/item/fabrik_4.json"
         ]
       },
       "path": "~/Bloecke/Fabrik"
@@ -94,10 +94,10 @@
       "registry_name": "fabrik_5",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/quasi/block/Fabrik5Block.java",
-          "src/main/resources/assets/quasimod/models/block/fabrik_5.json",
           "src/main/resources/assets/quasimod/blockstates/fabrik_5.json",
-          "src/main/resources/assets/quasimod/models/item/fabrik_5.json"
+          "src/main/resources/assets/quasimod/models/item/fabrik_5.json",
+          "src/main/java/net/mcreator/quasi/block/Fabrik5Block.java",
+          "src/main/resources/assets/quasimod/models/block/fabrik_5.json"
         ]
       },
       "path": "~/Bloecke/Fabrik"
@@ -122,10 +122,10 @@
       "registry_name": "oil_barrel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/quasi/block/OilBarrelBlock.java",
+          "src/main/resources/assets/quasimod/models/item/oil_barrel.json",
           "src/main/resources/assets/quasimod/blockstates/oil_barrel.json",
-          "src/main/resources/assets/quasimod/models/block/oil_barrel.json",
-          "src/main/resources/assets/quasimod/models/item/oil_barrel.json"
+          "src/main/java/net/mcreator/quasi/block/OilBarrelBlock.java",
+          "src/main/resources/assets/quasimod/models/block/oil_barrel.json"
         ]
       },
       "path": "~/Bloecke"
@@ -139,13 +139,13 @@
       "registry_name": "gestein",
       "metadata": {
         "files": [
-          "src/main/resources/assets/quasimod/blockstates/gestein.json",
-          "src/main/resources/data/quasimod/forge/biome_modifier/gestein_biome_modifier.json",
           "src/main/resources/data/quasimod/worldgen/placed_feature/gestein.json",
           "src/main/resources/assets/quasimod/models/item/gestein.json",
+          "src/main/resources/assets/quasimod/blockstates/gestein.json",
+          "src/main/resources/data/quasimod/forge/biome_modifier/gestein_biome_modifier.json",
+          "src/main/resources/data/quasimod/worldgen/configured_feature/gestein.json",
           "src/main/resources/assets/quasimod/models/block/gestein.json",
-          "src/main/java/net/mcreator/quasi/block/GesteinBlock.java",
-          "src/main/resources/data/quasimod/worldgen/configured_feature/gestein.json"
+          "src/main/java/net/mcreator/quasi/block/GesteinBlock.java"
         ]
       },
       "path": "~/Bloecke/Gestein"
@@ -415,6 +415,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -451,6 +455,10 @@
           "src/main/java/net/mcreator/quasi/procedures/FeiertagOnTickProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -524,6 +532,69 @@
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "Revolver",
+      "type": "animateditem",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quasimod/models/item/revolver.json",
+          "src/main/java/net/mcreator/quasi/item/renderer/RevolverItemRenderer.java",
+          "src/main/java/net/mcreator/quasi/item/RevolverItem.java",
+          "src/main/java/net/mcreator/quasi/item/model/RevolverItemModel.java"
+        ]
+      },
+      "path": "~/LUKES WESTERN GUNS"
+    },
+    {
+      "name": "BulletProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/BulletProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Prodecures"
+    },
+    {
+      "name": "Bullet",
+      "type": "projectile",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/entity/BulletEntity.java"
+        ]
+      },
+      "path": "~/Prodecures"
     }
   ],
   "variable_elements": [
@@ -590,36 +661,33 @@
   ],
   "sound_elements": [
     {
-      "name": "gmbh_living",
-      "files": [
-        "gmbh_living"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "gmbh_hurt",
-      "files": [
-        "gmbh_hurt"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "gmbh_death",
-      "files": [
-        "gmbh_death"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
       "name": "oildrumm",
       "files": [
         "328921_hellska_12_barrel09_online-audio-converter.com"
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "revolver.shot",
+      "files": [
+        "shot1",
+        "shot2",
+        "shot3",
+        "shot4",
+        "shot5",
+        "shot6"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "bulletimpact",
+      "files": [
+        "bullet_12_stone"
+      ],
+      "category": "neutral",
+      "subtitle": "Bullet Impact"
     }
   ],
   "language_map": {
@@ -628,20 +696,25 @@
       "subtitles.gmbh_living": "",
       "block.quasimod.fabrik_1": "Fabrik block",
       "block.quasimod.gestein": "Gestein",
+      "entity.quasimod.allmann": "Allmann",
       "block.quasimod.fabrik_3": "Fabrik block",
       "item.quasimod.bretzel": "Bretzel",
       "block.quasimod.fabrik_2": "Fabrik block",
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
       "item.quasimod.hammerand_chisel": "Hammer and Chisel",
       "block.quasimod.salt": "Salt",
+      "subtitles.revolver.shot": "",
       "block.quasimod.ertser": "Ertser",
       "block.quasimod.oil_barrel": "Oil Barrel",
       "item.quasimod.salt_item": "Salt",
       "block.quasimod.fabrik_5": "Fabrik block",
       "block.quasimod.fabrik_4": "Fabrik block",
       "subtitles.gmbh_death": "",
+      "item.quasimod.allmann_spawn_egg": "Allmann Spawn Egg",
+      "item.quasimod.revolver": "Revolver",
       "item.quasimod.construcion_wand": "Construcion Wand",
-      "block.quasi.ertser": "Ertser"
+      "block.quasi.ertser": "Ertser",
+      "subtitles.bulletimpact": "Bullet Impact"
     }
   },
   "foldersRoot": {
