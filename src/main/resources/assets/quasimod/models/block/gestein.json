@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "quasimod:block/gesteintexture",
-    "up": "quasimod:block/gesteintexture",
-    "north": "quasimod:block/gesteintexture",
-    "east": "quasimod:block/gesteintexture",
-    "south": "quasimod:block/gesteintexture",
-    "west": "quasimod:block/gesteintexture",
-    "particle": "quasimod:block/gesteintexture"
+    "down": "quasimod:block/gesteintexturwirklich",
+    "up": "quasimod:block/gesteintexturwirklich",
+    "north": "quasimod:block/gesteintexturwirklich",
+    "east": "quasimod:block/gesteintexturwirklich",
+    "south": "quasimod:block/gesteintexturwirklich",
+    "west": "quasimod:block/gesteintexturwirklich",
+    "particle": "quasimod:block/gesteintexturwirklich"
   },
   "render_type": "solid"
 }

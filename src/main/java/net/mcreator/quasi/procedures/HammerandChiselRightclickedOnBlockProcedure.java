@@ -53,10 +53,12 @@ public class HammerandChiselRightclickedOnBlockProcedure {
 									ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 								}
 							} else {
-								if (entity instanceof Player _player) {
-									ItemStack _setstack = new ItemStack(Items.AMETHYST_SHARD);
-									_setstack.setCount(1);
-									ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+								if (Math.random() < 0.05) {
+									if (entity instanceof Player _player) {
+										ItemStack _setstack = new ItemStack(Items.AMETHYST_SHARD);
+										_setstack.setCount(1);
+										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+									}
 								}
 							}
 						}

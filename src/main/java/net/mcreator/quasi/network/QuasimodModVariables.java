@@ -74,10 +74,10 @@ public class QuasimodModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.Pos1X = original.Pos1X;
-			clone.Pos1Y = original.Pos1Y;
-			clone.Pos1Z = original.Pos1Z;
-			clone.Pos2X = original.Pos2X;
 			clone.Pos2Y = original.Pos2Y;
+			clone.Pos2X = original.Pos2X;
+			clone.Pos1Z = original.Pos1Z;
+			clone.Pos1Y = original.Pos1Y;
 			clone.Pos2Z = original.Pos2Z;
 			clone.constructionwandstate = original.constructionwandstate;
 			if (!event.isWasDeath()) {
@@ -108,6 +108,7 @@ public class QuasimodModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "quasimod_worldvars";
+		public boolean IsFeiertag = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -116,10 +117,12 @@ public class QuasimodModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			IsFeiertag = nbt.getBoolean("IsFeiertag");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("IsFeiertag", IsFeiertag);
 			return nbt;
 		}
 
@@ -250,10 +253,10 @@ public class QuasimodModVariables {
 
 	public static class PlayerVariables {
 		public double Pos1X = 0;
-		public double Pos1Y = 0;
-		public double Pos1Z = 0;
-		public double Pos2X = 0;
 		public double Pos2Y = 0;
+		public double Pos2X = 0;
+		public double Pos1Z = 0;
+		public double Pos1Y = 0;
 		public double Pos2Z = 0;
 		public double constructionwandstate = 0;
 
@@ -265,10 +268,10 @@ public class QuasimodModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("Pos1X", Pos1X);
-			nbt.putDouble("Pos1Y", Pos1Y);
-			nbt.putDouble("Pos1Z", Pos1Z);
-			nbt.putDouble("Pos2X", Pos2X);
 			nbt.putDouble("Pos2Y", Pos2Y);
+			nbt.putDouble("Pos2X", Pos2X);
+			nbt.putDouble("Pos1Z", Pos1Z);
+			nbt.putDouble("Pos1Y", Pos1Y);
 			nbt.putDouble("Pos2Z", Pos2Z);
 			nbt.putDouble("constructionwandstate", constructionwandstate);
 			return nbt;
@@ -277,10 +280,10 @@ public class QuasimodModVariables {
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			Pos1X = nbt.getDouble("Pos1X");
-			Pos1Y = nbt.getDouble("Pos1Y");
-			Pos1Z = nbt.getDouble("Pos1Z");
-			Pos2X = nbt.getDouble("Pos2X");
 			Pos2Y = nbt.getDouble("Pos2Y");
+			Pos2X = nbt.getDouble("Pos2X");
+			Pos1Z = nbt.getDouble("Pos1Z");
+			Pos1Y = nbt.getDouble("Pos1Y");
 			Pos2Z = nbt.getDouble("Pos2Z");
 			constructionwandstate = nbt.getDouble("constructionwandstate");
 		}
@@ -308,10 +311,10 @@ public class QuasimodModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Pos1X = message.data.Pos1X;
-					variables.Pos1Y = message.data.Pos1Y;
-					variables.Pos1Z = message.data.Pos1Z;
-					variables.Pos2X = message.data.Pos2X;
 					variables.Pos2Y = message.data.Pos2Y;
+					variables.Pos2X = message.data.Pos2X;
+					variables.Pos1Z = message.data.Pos1Z;
+					variables.Pos1Y = message.data.Pos1Y;
 					variables.Pos2Z = message.data.Pos2Z;
 					variables.constructionwandstate = message.data.constructionwandstate;
 				}
