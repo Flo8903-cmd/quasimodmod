@@ -41,7 +41,7 @@ public class RevolverEntitySwingsItemProcedure {
 					}
 				}.getArrow(projectileLevel, 5, 0, (byte) 0.5);
 				_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-				_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, (float) 0.2);
+				_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 15, (float) 0.2);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
 		}
