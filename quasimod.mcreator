@@ -580,7 +580,7 @@
           }
         ]
       },
-      "path": "~/Prodecures"
+      "path": "~/LUKES WESTERN GUNS"
     },
     {
       "name": "Bullet",
@@ -594,7 +594,47 @@
           "src/main/java/net/mcreator/quasi/entity/BulletEntity.java"
         ]
       },
-      "path": "~/Prodecures"
+      "path": "~/LUKES WESTERN GUNS"
+    },
+    {
+      "name": "RevolverEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/RevolverEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LUKES WESTERN GUNS"
     }
   ],
   "variable_elements": [
