@@ -512,6 +512,26 @@
         ]
       },
       "path": "~/ENTITY"
+    },
+    {
+      "name": "PlayerKillsAllmann",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_kills_allmann",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/PlayerKillsAllmannProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Prodecures"
     }
   ],
   "variable_elements": [
