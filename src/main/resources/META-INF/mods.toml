@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="quasimod"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="flo8903, MCreator"
+authors="flo8903, zombiegmbh, asda9376, MCreator"
 
 [[dependencies.quasimod]]
     modId="minecraft"
