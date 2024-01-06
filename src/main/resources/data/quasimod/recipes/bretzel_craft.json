@@ -2,18 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
     "aba",
-    "ac "
+    "bcb",
+    "bd "
   ],
   "key": {
     "a": {
-      "item": "minecraft:wheat"
+      "item": "quasimod:salt_item"
     },
     "b": {
-      "item": "minecraft:water_bucket"
+      "item": "minecraft:wheat"
     },
     "c": {
+      "item": "minecraft:water_bucket"
+    },
+    "d": {
       "item": "minecraft:wheat"
     }
   },

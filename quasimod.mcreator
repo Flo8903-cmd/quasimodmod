@@ -401,6 +401,129 @@
         ]
       },
       "path": "~/Bloecke"
+    },
+    {
+      "name": "BlockBrocken",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_brocken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/BlockBrockenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Prodecures"
+    },
+    {
+      "name": "Allmann",
+      "type": "livingentity",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allmann",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/client/renderer/AllmannRenderer.java",
+          "src/main/java/net/mcreator/quasi/entity/AllmannEntity.java",
+          "src/main/resources/assets/quasimod/models/item/allmann_spawn_egg.json",
+          "src/main/resources/data/quasimod/forge/biome_modifier/allmann_biome_modifier.json"
+        ]
+      },
+      "path": "~/ENTITY"
+    },
+    {
+      "name": "FeiertagOnTick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feiertag_on_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/FeiertagOnTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Prodecures"
+    },
+    {
+      "name": "PlayerKillsAllmann",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_kills_allmann",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/PlayerKillsAllmannProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Prodecures"
+    },
+    {
+      "name": "SetFeiertagsProcedur",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_feiertags_procedur",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/SetFeiertagsProcedurProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Prodecures"
+    },
+    {
+      "name": "SetIsFeiertags",
+      "type": "command",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_is_feiertags",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/command/SetIsFeiertagsCommand.java"
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -457,6 +580,12 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "FeiertagsAnger",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -500,6 +629,7 @@
       "block.quasimod.fabrik_1": "Fabrik block",
       "block.quasimod.gestein": "Gestein",
       "block.quasimod.fabrik_3": "Fabrik block",
+      "item.quasimod.bretzel": "Bretzel",
       "block.quasimod.fabrik_2": "Fabrik block",
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
       "item.quasimod.hammerand_chisel": "Hammer and Chisel",
@@ -525,11 +655,11 @@
             "children": []
           },
           {
-            "name": "construction wand",
+            "name": "Food",
             "children": []
           },
           {
-            "name": "Food",
+            "name": "construction wand",
             "children": []
           }
         ]
@@ -548,11 +678,19 @@
         ]
       },
       {
+        "name": "LUKES WESTERN GUNS",
+        "children": []
+      },
+      {
+        "name": "ENTITY",
+        "children": []
+      },
+      {
         "name": "Prodecures",
         "children": []
       },
       {
-        "name": "LUKES WESTERN GUNS",
+        "name": "Commands",
         "children": []
       }
     ]

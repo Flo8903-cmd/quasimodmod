@@ -32,6 +32,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.quasi.init.QuasimodModTabs;
 import net.mcreator.quasi.init.QuasimodModSounds;
 import net.mcreator.quasi.init.QuasimodModItems;
+import net.mcreator.quasi.init.QuasimodModEntities;
 import net.mcreator.quasi.init.QuasimodModBlocks;
 
 import java.util.function.Supplier;
@@ -55,6 +56,7 @@ public class QuasimodMod {
 		QuasimodModBlocks.REGISTRY.register(bus);
 
 		QuasimodModItems.REGISTRY.register(bus);
+		QuasimodModEntities.REGISTRY.register(bus);
 
 		QuasimodModTabs.REGISTRY.register(bus);
 

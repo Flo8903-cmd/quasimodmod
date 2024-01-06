@@ -81,6 +81,7 @@ public class QuasimodModVariables {
 			clone.Pos2Z = original.Pos2Z;
 			clone.constructionwandstate = original.constructionwandstate;
 			if (!event.isWasDeath()) {
+				clone.FeiertagsAnger = original.FeiertagsAnger;
 			}
 		}
 
@@ -259,6 +260,7 @@ public class QuasimodModVariables {
 		public double Pos1Y = 0;
 		public double Pos2Z = 0;
 		public double constructionwandstate = 0;
+		public double FeiertagsAnger = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -274,6 +276,7 @@ public class QuasimodModVariables {
 			nbt.putDouble("Pos1Y", Pos1Y);
 			nbt.putDouble("Pos2Z", Pos2Z);
 			nbt.putDouble("constructionwandstate", constructionwandstate);
+			nbt.putDouble("FeiertagsAnger", FeiertagsAnger);
 			return nbt;
 		}
 
@@ -286,6 +289,7 @@ public class QuasimodModVariables {
 			Pos1Y = nbt.getDouble("Pos1Y");
 			Pos2Z = nbt.getDouble("Pos2Z");
 			constructionwandstate = nbt.getDouble("constructionwandstate");
+			FeiertagsAnger = nbt.getDouble("FeiertagsAnger");
 		}
 	}
 
@@ -317,6 +321,7 @@ public class QuasimodModVariables {
 					variables.Pos1Y = message.data.Pos1Y;
 					variables.Pos2Z = message.data.Pos2Z;
 					variables.constructionwandstate = message.data.constructionwandstate;
+					variables.FeiertagsAnger = message.data.FeiertagsAnger;
 				}
 			});
 			context.setPacketHandled(true);

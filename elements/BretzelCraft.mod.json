@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:SaltItem"
       },
       {
         "value": "Items.WHEAT"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SaltItem"
       },
       {
         "value": "Items.WHEAT"
