@@ -339,8 +339,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/proceduren/feiertag"
+      }
     },
     {
       "name": "Bretzel",
@@ -355,7 +354,7 @@
           "src/main/java/net/mcreator/quasi/item/BretzelItem.java"
         ]
       },
-      "path": "~/Items/Bretzel"
+      "path": "~/Items"
     },
     {
       "name": "BretzelCraft",
@@ -369,7 +368,7 @@
           "src/main/resources/data/quasimod/recipes/bretzel_craft.json"
         ]
       },
-      "path": "~/Items/Bretzel"
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
