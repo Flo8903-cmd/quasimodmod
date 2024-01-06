@@ -299,7 +299,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Prodecures"
     },
     {
       "name": "Bretzel",
@@ -313,7 +314,8 @@
           "src/main/resources/assets/quasimod/models/item/bretzel.json",
           "src/main/java/net/mcreator/quasi/item/BretzelItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Food"
     },
     {
       "name": "BretzelCraft",
@@ -326,7 +328,8 @@
         "files": [
           "src/main/resources/data/quasimod/recipes/bretzel_craft.json"
         ]
-      }
+      },
+      "path": "~/Items/Food"
     }
   ],
   "variable_elements": [
@@ -451,6 +454,10 @@
           {
             "name": "construction wand",
             "children": []
+          },
+          {
+            "name": "Food",
+            "children": []
           }
         ]
       },
@@ -466,6 +473,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Prodecures",
+        "children": []
       }
     ]
   },
