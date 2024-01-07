@@ -34,7 +34,7 @@ public class FeiertagOnTickProcedure {
 		if (entity == null)
 			return;
 		if (QuasimodModVariables.WorldVariables.get(world).IsFeiertag == true) {
-			if ((entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new QuasimodModVariables.PlayerVariables())).FeiertagsAnger < 2) {
+			if ((entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new QuasimodModVariables.PlayerVariables())).FeiertagsAnger > 2) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = QuasimodModEntities.ALLMANN.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -48,7 +48,7 @@ public class FeiertagOnTickProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if ((entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new QuasimodModVariables.PlayerVariables())).FeiertagsAnger < 5) {
+				if ((entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new QuasimodModVariables.PlayerVariables())).FeiertagsAnger > 5) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = EntityType.CAMEL.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 						if (entityToSpawn != null) {

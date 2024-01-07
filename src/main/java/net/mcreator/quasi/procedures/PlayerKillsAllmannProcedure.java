@@ -30,7 +30,7 @@ public class PlayerKillsAllmannProcedure {
 			return;
 		if (entity instanceof AllmannEntity) {
 			{
-				double _setval = 3;
+				double _setval = (entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new QuasimodModVariables.PlayerVariables())).FeiertagsAnger + 3;
 				entity.getCapability(QuasimodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.FeiertagsAnger = _setval;
 					capability.syncPlayerVariables(entity);

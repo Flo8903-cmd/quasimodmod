@@ -532,6 +532,44 @@
         ]
       },
       "path": "~/Prodecures"
+    },
+    {
+      "name": "Getangerfeiertags",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getangerfeiertags",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/GetangerfeiertagsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "GetFeiertagsanger",
+      "type": "command",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_feiertagsanger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/command/GetFeiertagsangerCommand.java"
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
