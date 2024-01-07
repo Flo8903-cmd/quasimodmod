@@ -1,10 +1,8 @@
 package net.mcreator.quasi.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.quasi.network.QuasimodModVariables;
+import javax.annotation.Nullable;
 
 public class GetangerfeiertagsProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

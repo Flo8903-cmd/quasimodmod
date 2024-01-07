@@ -1,0 +1,6 @@
+{
+  "parent": "quasimod:displaysettings/revolver.item",
+  "textures": {
+    "layer0": "quasimod:item/revolver"
+  }
+}

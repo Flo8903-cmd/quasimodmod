@@ -1,32 +1,45 @@
 {
-  "gmbh_living": {
-    "sounds": [
-      {
-        "name": "quasimod:gmbh_living",
-        "stream": false
-      }
-    ]
-  },
-  "gmbh_hurt": {
-    "sounds": [
-      {
-        "name": "quasimod:gmbh_hurt",
-        "stream": false
-      }
-    ]
-  },
-  "gmbh_death": {
-    "sounds": [
-      {
-        "name": "quasimod:gmbh_death",
-        "stream": false
-      }
-    ]
-  },
   "oildrumm": {
     "sounds": [
       {
         "name": "quasimod:328921_hellska_12_barrel09_online-audio-converter.com",
+        "stream": false
+      }
+    ]
+  },
+  "revolver.shot": {
+    "sounds": [
+      {
+        "name": "quasimod:shot1",
+        "stream": false
+      },
+      {
+        "name": "quasimod:shot2",
+        "stream": false
+      },
+      {
+        "name": "quasimod:shot3",
+        "stream": false
+      },
+      {
+        "name": "quasimod:shot4",
+        "stream": false
+      },
+      {
+        "name": "quasimod:shot5",
+        "stream": false
+      },
+      {
+        "name": "quasimod:shot6",
+        "stream": false
+      }
+    ]
+  },
+  "bulletimpact": {
+    "subtitle": "subtitles.bulletimpact",
+    "sounds": [
+      {
+        "name": "quasimod:bullet_12_stone",
         "stream": false
       }
     ]

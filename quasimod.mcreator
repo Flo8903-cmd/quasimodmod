@@ -534,6 +534,20 @@
       "path": "~/Prodecures"
     },
     {
+      "name": "GetFeiertagsanger",
+      "type": "command",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_feiertagsanger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/command/GetFeiertagsangerCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
       "name": "Getangerfeiertags",
       "type": "procedure",
       "sortid": 24,
@@ -558,18 +572,107 @@
       "path": "~/Commands"
     },
     {
-      "name": "GetFeiertagsanger",
-      "type": "command",
+      "name": "Bullet",
+      "type": "projectile",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/entity/BulletEntity.java"
+        ]
+      },
+      "path": "~/LUKES WESTERN GUNS"
+    },
+    {
+      "name": "Revolver",
+      "type": "animateditem",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/item/renderer/RevolverItemRenderer.java",
+          "src/main/java/net/mcreator/quasi/item/RevolverItem.java",
+          "src/main/java/net/mcreator/quasi/item/model/RevolverItemModel.java",
+          "src/main/resources/assets/quasimod/models/item/revolver.json"
+        ]
+      },
+      "path": "~/LUKES WESTERN GUNS"
+    },
+    {
+      "name": "RevolverEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revolver_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quasi/procedures/RevolverEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/LUKES WESTERN GUNS"
+    },
+    {
+      "name": "BulletProjectileHitsBlock",
+      "type": "procedure",
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "get_feiertagsanger",
+      "registry_name": "bullet_projectile_hits_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/quasi/command/GetFeiertagsangerCommand.java"
+          "src/main/java/net/mcreator/quasi/procedures/BulletProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
-      "path": "~/Commands"
+      "path": "~/LUKES WESTERN GUNS"
     }
   ],
   "variable_elements": [
@@ -636,36 +739,33 @@
   ],
   "sound_elements": [
     {
-      "name": "gmbh_living",
-      "files": [
-        "gmbh_living"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "gmbh_hurt",
-      "files": [
-        "gmbh_hurt"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "gmbh_death",
-      "files": [
-        "gmbh_death"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
       "name": "oildrumm",
       "files": [
         "328921_hellska_12_barrel09_online-audio-converter.com"
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "revolver.shot",
+      "files": [
+        "shot1",
+        "shot2",
+        "shot3",
+        "shot4",
+        "shot5",
+        "shot6"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "bulletimpact",
+      "files": [
+        "bullet_12_stone"
+      ],
+      "category": "neutral",
+      "subtitle": "Bullet Impact"
     }
   ],
   "language_map": {
@@ -681,6 +781,7 @@
       "item_group.quasimod.quasi_blocks": "Quasi Blocks",
       "item.quasimod.hammerand_chisel": "Hammer and Chisel",
       "block.quasimod.salt": "Salt",
+      "subtitles.revolver.shot": "",
       "block.quasimod.ertser": "Ertser",
       "block.quasimod.oil_barrel": "Oil Barrel",
       "item.quasimod.salt_item": "Salt",
@@ -689,7 +790,8 @@
       "subtitles.gmbh_death": "",
       "item.quasimod.allmann_spawn_egg": "Allmann Spawn Egg",
       "item.quasimod.construcion_wand": "Construcion Wand",
-      "block.quasi.ertser": "Ertser"
+      "block.quasi.ertser": "Ertser",
+      "subtitles.bulletimpact": "Bullet Impact"
     }
   },
   "foldersRoot": {
@@ -726,15 +828,19 @@
         ]
       },
       {
+        "name": "LUKES WESTERN GUNS",
+        "children": []
+      },
+      {
+        "name": "ENTITY",
+        "children": []
+      },
+      {
         "name": "Prodecures",
         "children": []
       },
       {
         "name": "Commands",
-        "children": []
-      },
-      {
-        "name": "ENTITY",
         "children": []
       }
     ]

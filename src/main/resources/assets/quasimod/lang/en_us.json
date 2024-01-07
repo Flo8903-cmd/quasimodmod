@@ -10,6 +10,7 @@
   "item_group.quasimod.quasi_blocks": "Quasi Blocks",
   "item.quasimod.hammerand_chisel": "Hammer and Chisel",
   "block.quasimod.salt": "Salt",
+  "subtitles.revolver.shot": "",
   "block.quasimod.ertser": "Ertser",
   "block.quasimod.oil_barrel": "Oil Barrel",
   "item.quasimod.salt_item": "Salt",
@@ -18,5 +19,6 @@
   "subtitles.gmbh_death": "",
   "item.quasimod.allmann_spawn_egg": "Allmann Spawn Egg",
   "item.quasimod.construcion_wand": "Construcion Wand",
-  "block.quasi.ertser": "Ertser"
+  "block.quasi.ertser": "Ertser",
+  "subtitles.bulletimpact": "Bullet Impact"
 }
